@@ -9,7 +9,7 @@ export async function POST(request: NextRequest) {
   const res = NextResponse.json({ ok: true })
   res.cookies.set('auth', process.env.AUTH_SECRET, {
     httpOnly: true,
-    secure: process.env.NODE_ENV === 'production',
+    secure: false,
     sameSite: 'strict',
     maxAge: 60 * 60 * 24 * 30,
     path: '/',
