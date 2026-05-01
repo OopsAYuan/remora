@@ -11,6 +11,7 @@ export async function GET(req: NextRequest) {
   return new ImageResponse(
     {
       type: "div",
+      key: null,
       props: {
         style: {
           background: "linear-gradient(135deg, #d97706, #f59e0b)",
@@ -23,6 +24,7 @@ export async function GET(req: NextRequest) {
         },
         children: {
           type: "div",
+          key: null,
           props: {
             style: {
               color: "white",
