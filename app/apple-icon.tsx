@@ -7,6 +7,7 @@ export default function AppleIcon() {
   return new ImageResponse(
     {
       type: "div",
+      key: null,
       props: {
         style: {
           background: "linear-gradient(135deg, #d97706, #f59e0b)",
@@ -19,6 +20,7 @@ export default function AppleIcon() {
         },
         children: {
           type: "div",
+          key: null,
           props: {
             style: {
               color: "white",
